@@ -1,26 +1,46 @@
-import React from 'react';
-import logo from './logo.svg';
+import React ,{Component} from 'react';
+
+import Cards from './components/Cards/Cards';
+import Charts from './components/Charts/Chart';
+import CountryPicker from './components/CountryPicker/CountryPicker';
+import {fetchData} from './api';
+
+
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  state = {
+    data: [],
+    country:'',
+  }
+
+  async componentDidMount() {
+    const data = await fetchData();
+
+    this.setState({data : data})
+    }
+ handleCountryChange = async (country) =>{
+   const data = await fetchData(country);
+   this.setState({data : data, country:country});
+
+ }
+
+
+
+  render(){
+
+    return (
+      <div className="App">
+        <img src={'img/2.png'} alt="corona-image"/>
+        <Cards data ={this.state.data}/>
+        <CountryPicker handleCountryChange={this.handleCountryChange}/>
+        <Charts data={this.state.data} country={this.state.country}/>
+        <h6> -- Made by Pratik Yadav --</h6>
+      </div>
+    );
+  }
+
+
 }
 
 export default App;

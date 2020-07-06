@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+body{
+  background-color: #334;
+  font-family: cursive;
+}
+img{
+  margin-top: 20px;
+  height: 100px;
+}
+h6{
+  margin-top: 40px;
+  color: white;
+  font-family: monospace;
+}

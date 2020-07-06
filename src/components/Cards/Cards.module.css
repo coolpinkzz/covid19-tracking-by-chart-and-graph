@@ -1,0 +1,23 @@
+.container{
+  text-align: left;
+  color: red;
+  margin: 50px;
+}
+.load{
+  margin-top: 100px;
+}
+.card{
+  margin: 2% 2% !important;
+  border-bottom: 10px solid black;
+  border-right: 10px solid black;
+}
+.infected{
+  background-color: #2196f3 !important ;
+}
+.recovered{
+  background-color: #76ff03 !important ;
+}
+.deaths{
+  background-color: #f50057 !important ;
+
+}
