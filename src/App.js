@@ -4,6 +4,8 @@ import Cards from './components/Cards/Cards';
 import Charts from './components/Charts/Chart';
 import CountryPicker from './components/CountryPicker/CountryPicker';
 import {fetchData} from './api';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHeart } from '@fortawesome/free-solid-svg-icons'
 
 
 import './App.css';
@@ -35,7 +37,8 @@ class App extends Component {
         <Cards data ={this.state.data}/>
         <CountryPicker handleCountryChange={this.handleCountryChange}/>
         <Charts data={this.state.data} country={this.state.country}/>
-        <h6> -- Made by Pratik Yadav --</h6>
+        <h6>Copyright@2020 -- Made with <FontAwesomeIcon icon={faHeart} /> by Pratik Yadav --</h6>
+
       </div>
     );
   }

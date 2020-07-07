@@ -47,6 +47,7 @@ img{
 }
 h6{
   margin-top: 40px;
-  color: white;
+  color: black;
   font-family: monospace;
+  background-color: white;
 }
