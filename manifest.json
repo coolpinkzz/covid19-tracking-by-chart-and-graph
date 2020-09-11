@@ -1,0 +1,21 @@
+{
+  "name": "Live Corona Tracker",
+  "short_name": "covid tracker",
+  "theme_color": "#49a1e7",
+  "background_color": "#2196f3",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "img/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "images/x-icon"
+    },
+    {
+      "src": "img/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "images/x-icon"
+    }
+  ]
+}
