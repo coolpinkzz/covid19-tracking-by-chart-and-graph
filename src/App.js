@@ -40,7 +40,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="head">
-          <img src={"img/2.png"} alt="corona-image" />
+          <img src="img/2.png" alt="corona" />
         </h1>
 
         <CountryPicker handleCountryChange={this.handleCountryChange} />
