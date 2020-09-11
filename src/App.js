@@ -6,7 +6,6 @@ import CountryPicker from "./components/CountryPicker/CountryPicker";
 import { fetchData } from "./api";
 import axios from "axios";
 import "./App.css";
-import StatePicker from "./components/StatePicker/StatePicker";
 
 class App extends Component {
   constructor(props) {
